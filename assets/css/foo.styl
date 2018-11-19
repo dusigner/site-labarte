@@ -1,0 +1,419 @@
+@import 'jeet'
+
+@include edit()
+
+$h1 = besom_2regular
+$p = cabanaregular
+$desktop = 1000px
+
+@font-face
+    font-family besom_2regular
+    font-weight normal
+    font-style normal
+    src url(../fonts/besom-handwritten-brush-font-webfont.ttf)
+
+@font-face
+    font-family cabanaregular
+    font-weight normal
+    font-style normal
+    src url(../fonts/cabana-regular-webfont.ttf)
+html
+    height 100%
+    overflow-x hidden
+body
+    height 100%
+    margin 0
+    font-size 18px
+section
+    center(100%)
+    height 100%
+    max-height 800px
+    width 100%
+    position: relative
+    overflow hidden
+h1
+    font-family $h1
+    font-size 4.5em
+    margin 0
+    opacity 0.5
+p
+    font-family $p
+    font-size 3em
+    margin 0
+    opacity 0.8
+    line-height 100%
+figure
+    margin 0
+.img-responsive
+    display block
+    max-height: 100%;
+    max-width: 100%;
+::-webkit-input-placeholder
+    color white
+    opacity 0.5
+:-moz-placeholder
+    color white
+    opacity 0.5
+ ::-moz-placeholder
+    color white
+    opacity 0.5
+:-ms-input-placeholder
+    color white
+    opacity 0.5
+nav
+    background-color rgba(227, 237, 191, 0.8)
+    padding 15px 15px 15px 0
+    text-align right
+    font-family $h1
+    font-size 1.2em
+    position fixed
+    width 100%
+    z-index 9999
+nav a
+    text-decoration none
+    color #99B768
+    margin 0 10px
+nav a:last-child
+    margin-right 60px
+nav a:hover
+    color #6E725D
+.center
+    text-align center
+
+/*********************************
+Section Home
+*********************************/
+.logo
+    position absolute
+    margin-top 50px
+    z-index 9999
+    margin-left 12px
+    display block
+
+.bg-home
+    background-size 100% 100%
+    /*background-image url("../img/home.png")*/
+.bg-triangle
+    background-color #8ECA5C
+    background-image url("../../img/triangle-home.png")
+    background-repeat no-repeat
+    background-position bottom
+.home-flower
+    width 100%
+    text-align center
+    top -50px !important
+.home-model-01
+    top 122px !important
+    left 151px !important
+.home-model-02
+    right -145px !important
+    text-align right
+    top -50px !important
+/*********************************
+Section Quem Somos
+*********************************/
+.bg-quem-somos
+    background-size 100%
+    background-image url("../../img/bg-quem-somos.jpg")
+    aside
+        col(.30)
+    article
+        col(.70)
+        padding 45px
+        box-sizing border-box
+.quem-somos-cactus
+    width 100%
+    text-align right
+    img
+        top -250px
+        width 150%
+/*********************************
+Section Portfólio
+*********************************/
+.preloader
+    width 100%
+    height 100%
+.portifolio-logo
+    width 100%
+    height 100%
+    display block
+    z-index 1000
+    position absolute
+    cursor pointer
+.portifolio-logo:hover h1
+    color: #ff9900;
+.blocktop
+    background-color #E6E8BD
+    width 100%
+    height 100%
+    position absolute
+    top 0px
+    left -50%
+    z-index 10
+    transform skew(-45deg)
+    -o-transform skew(-45deg)
+    -moz-transform skew(-45deg)
+    -webkit-transform skew(-45deg)
+.blockbottom
+    background-image url("../../img/bg-portifolio.jpg")
+    width 100%
+    height 100%
+    position absolute
+    bottom 0px
+    right -50%
+    transform skew(-45deg)
+    -o-transform skew(-45deg)
+    -moz-transform skew(-45deg)
+    -webkit-transform skew(-45deg)
+.bg-portifolio
+    background-image url("../../img/bg-portifolio2.jpg")
+    background-color black
+    background-size 100% 100%
+.portifolio-font
+    width 100%
+    text-align center
+.portifolio-font h1
+    font-size 6em
+    margin-top 120px
+.portifolio-elephant
+    width 100%
+    text-align center
+.portifolio-elephant img
+    width 66%
+    margin-left 40px
+.portifolio-row-one
+    center (300px)
+    text-align center
+.portifolio-row-two
+    center (100%)
+    text-align center
+    margin-top -50px
+    a
+        margin 0 70px
+        display inline-block
+.portifolio-row-three
+    center (300px)
+    text-align center
+    margin-top -50px
+.portifolio-content
+    width 100%
+    position absolute
+    padding-top 50px
+    img
+        max-height 220px
+/*********************************
+Geral
+*********************************/
+.rotacionar
+    transform rotate(45deg)
+.hoverimg figure:hover img
+    opacity 1
+    -webkit-animation flash 1.5s
+    animation flash 1.5s
+@keyframes flash
+    0%
+        opacity: .4
+    100%
+        opacity: 1
+/*********************************
+Section Colecao
+*********************************/
+.colecao-logo
+    width 100%
+    height 100%
+    display block
+    z-index 1000
+    position absolute
+    cursor pointer
+.colecao-logo:hover h1
+    color: green;
+.blocktop2
+    background-color #F2F3ED
+    border-right solid 2px #fff
+    width 100%
+    height 100%
+    position absolute
+    top 0px
+    left -50%
+    z-index 10
+    transform skew(-45deg)
+    -o-transform skew(-45deg)
+    -moz-transform skew(-45deg)
+    -webkit-transform skew(-45deg)
+.blockbottom2
+    background-color #E8E9E4
+    width 100%
+    height 100%
+    position absolute
+    bottom 0px
+    right -50%
+    transform skew(-45deg)
+    -o-transform skew(-45deg)
+    -moz-transform skew(-45deg)
+    -webkit-transform skew(-45deg)
+.bg-colecao
+    background-size 100%
+    background-image url("../../img/bg-colecao2.jpg")
+    h1
+        position absolute
+        top 45%
+        left 50%
+        transform translate(-50%)
+        color #e1176c
+        opacity 1
+    p
+        padding-left 20px
+        border-left solid 2px #000
+        transform translateY(20%)
+        position absolute
+        width 30%
+        right 50px
+    .colecao-mouse
+        position absolute
+        max-height 100%
+        height 100%
+        width 100%
+    #p-colecao
+        padding 0
+        margin 0
+        height 100%
+        max-height 800px
+        li
+            width 100%
+            height 100%
+            position relative
+            &:first-child
+                img
+                    margin-left -50px
+                    margin-top 10px
+            &:last-child
+                text-align right
+                img
+                    top 70%
+                    position relative
+.colecao-row
+    center (100%)
+    text-align center
+    margin-top -50px
+    display block
+    figure
+        margin 0 70px
+        display inline-block
+.colecao-content
+    position absolute
+    width 100%
+    height 100%
+    padding-top 85px
+    img
+        max-height 190px
+    h2
+        font-family $p
+        font-size 2em
+        opacity 0.5
+        margin-bottom 120px
+        letter-spacing 4px
+        a
+            text-decoration none
+        a:hover
+            text-decoration underline
+/*********************************
+Section Contato
+*********************************/
+.bg-contato
+    background-size 100%
+    background-image url("../../img/bg-pattern-contato.jpg")
+    overflow hidden
+    .contato-logo
+        position absolute
+        top -56px
+        left 50%;
+        transform translateX(-50%);
+    aside
+        transform translateY(100%)
+        col(.50)
+        text-align center
+        form
+            width 68%
+            margin 0 auto
+            input , textarea
+                background-color #8da95f
+                width 100%
+                border none
+                padding 0 8px
+                margin 0px 0 8px 21px
+                box-sizing border-box
+                font-family $p
+                font-size 1.9em
+                color #fff
+            button
+                width 100%
+                background: #8ECA5C
+                font-size 1.3em
+                border none
+                color white
+                font-family $p
+                margin-left 23px
+                cursor pointer
+                letter-spacing 2px
+            button:hover
+                    background-color: white
+                    color #8ECA5C
+
+    article
+        transform translateY(100%)
+        col(.50)
+        padding-left 75px
+        padding-right 140px
+        box-sizing border-box
+        h1
+            font-size 2.15em
+            color white
+            margin-top 20px
+            opacity 1
+        p
+            color white
+            font-size 2em
+            margin-top 3px
+            letter-spacing 6px
+            line-height 50px
+            opacity 1
+/*********************************
+Animação
+*********************************/
+.animated
+    animation-duration 2s
+    animation-fill-mode both
+    animation-iteration-count infinite
+    animation-timing-function ease-in-out
+.animated-2
+    animation-duration 3s
+    animation-fill-mode both
+    animation-iteration-count infinite
+    animation-timing-function ease-in-out
+@keyframes swing
+    20%
+        transform rotate(15deg)
+    40%
+        transform rotate(-10deg)
+    60%
+        transform rotate(5deg)
+    80%
+        transform rotate(-5deg)
+    100%
+        transform rotate(0deg)
+@keyframes giro
+    0%
+        transform: scale(0.9 , 1);
+    50%
+        transform: scale(0 , 1);
+    100%
+        transform: scale(0.9 , 1);
+.swing
+    transform-origin top center
+    animation-name swing
+.swing-2
+    transform-origin top right
+    animation-name swing
+.swing-3
+    transform-origin top center
+    animation-name giro

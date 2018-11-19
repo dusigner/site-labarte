@@ -1,0 +1,422 @@
+@include edit();
+@font-face {
+  font-family: besom_2regular;
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/besom-handwritten-brush-font-webfont.ttf");
+}
+@font-face {
+  font-family: cabanaregular;
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/cabana-regular-webfont.ttf");
+}
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 18px;
+}
+section {
+  *zoom: 1;
+  width: auto;
+  max-width: 100%;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;
+  max-height: 800px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+section:before,
+section:after {
+  content: '';
+  display: table;
+}
+section:after {
+  clear: both;
+}
+h1 {
+  font-family: besom_2regular;
+  font-size: 4.5em;
+  margin: 0;
+  opacity: 0.5;
+}
+p {
+  font-family: cabanaregular;
+  font-size: 3em;
+  margin: 0;
+  opacity: 0.8;
+  line-height: 100%;
+}
+.img-responsive {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+/*********************************
+Section Home
+*********************************/
+.bg-home {
+  background-size: 100%;
+}
+.bg-triangle {
+  background-color: #8eca5c;
+  background-image: url("img/triangle-home.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.home-flower {
+  width: 100%;
+  text-align: center;
+}
+.home-model-01 {
+  top: 123px !important;
+  left: 115px !important;
+}
+.home-model-02 {
+  right: -145px !important;
+  text-align: right;
+  top: -50px !important;
+}
+/*********************************
+Section Quem Somos
+*********************************/
+.bg-quem-somos {
+  background-size: 100%;
+  background-image: url("img/bg-quem-somos.jpg");
+}
+.bg-quem-somos aside {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 27.9%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.bg-quem-somos aside:before,
+.bg-quem-somos aside:after {
+  content: '';
+  display: table;
+}
+.bg-quem-somos aside:after {
+  clear: both;
+}
+.bg-quem-somos aside:last-child {
+  margin-right: 0%;
+}
+.bg-quem-somos article {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 69.1%;
+  margin-left: 0%;
+  margin-right: 3%;
+  padding: 45px;
+  box-sizing: border-box;
+}
+.bg-quem-somos article:before,
+.bg-quem-somos article:after {
+  content: '';
+  display: table;
+}
+.bg-quem-somos article:after {
+  clear: both;
+}
+.bg-quem-somos article:last-child {
+  margin-right: 0%;
+}
+.quem-somos-cactus {
+  width: 100%;
+  text-align: right;
+}
+.quem-somos-cactus img {
+  top: -250px;
+  width: 150%;
+}
+/*********************************
+Section Portfólio
+*********************************/
+.preloader {
+  width: 100%;
+  height: 100%;
+}
+.portifolio-logo , .colecao-logo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1000;
+  position: absolute;
+  cursor: pointer;
+}
+.blocktop {
+  background-color: #e6e8bd;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: -50%;
+  z-index: 10;
+  transform: skew(-45deg);
+  -o-transform: skew(-45deg);
+  -moz-transform: skew(-45deg);
+  -webkit-transform: skew(-45deg);
+}
+.blockbottom {
+  background-image: url("img/bg-portifolio.jpg");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: -50%;
+  transform: skew(-45deg);
+  -o-transform: skew(-45deg);
+  -moz-transform: skew(-45deg);
+  -webkit-transform: skew(-45deg);
+}
+.blocktop2 {
+  background-color: #F2F3ED;
+  border-right: solid 2px #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: -50%;
+  z-index: 10;
+  transform: skew(-45deg);
+  -o-transform: skew(-45deg);
+  -moz-transform: skew(-45deg);
+  -webkit-transform: skew(-45deg);
+}
+.blockbottom2 {
+  background-color: #E8E9E4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: -50%;
+  transform: skew(-45deg);
+  -o-transform: skew(-45deg);
+  -moz-transform: skew(-45deg);
+  -webkit-transform: skew(-45deg);
+}
+.bg-portifolio {
+  background-image: url("img/portfolio-site.png");
+  background-size: 100% 100%;
+}
+.portifolio-font {
+  width: 100%;
+  text-align: center;
+}
+.portifolio-font h1 {
+  font-size: 6em;
+  margin-top: 120px;
+}
+.portifolio-elephant {
+  width: 100%;
+  text-align: center;
+}
+.portifolio-elephant img {
+  width: 66%;
+  margin-left: 40px;
+}
+/*********************************
+Section Coleção
+*********************************/
+.bg-colecao {
+  background-size: 100% 100%;
+  background-image: url("img/colecoes-site.png");
+}
+
+.bg-colecao h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  color: #e1176c;
+  opacity: 1;
+}
+.bg-colecao p {
+  padding-left: 20px;
+  border-left: solid 2px #000;
+  transform: translateY(20%);
+  position: absolute;
+  width: 30%;
+  right: 50px;
+}
+.bg-colecao div {
+  position: absolute;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+.bg-colecao #p-colecao {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  max-height: 800px;
+}
+.bg-colecao #p-colecao li {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.bg-colecao #p-colecao li:first-child img {
+  margin-left: -50px;
+  margin-top: 10px;
+}
+.bg-colecao #p-colecao li:last-child {
+  text-align: right;
+}
+.bg-colecao #p-colecao li:last-child img {
+  top: 70%;
+  position: relative;
+}
+/*********************************
+Section Contato
+*********************************/
+.bg-contato {
+  background-size: 100%;
+  background-image: url("img/contato.jpg");
+}
+.bg-contato aside {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 27.9%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.bg-contato aside:before,
+.bg-contato aside:after {
+  content: '';
+  display: table;
+}
+.bg-contato aside:after {
+  clear: both;
+}
+.bg-contato aside:last-child {
+  margin-right: 0%;
+}
+.bg-contato article {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 69.1%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.bg-contato article:before,
+.bg-contato article:after {
+  content: '';
+  display: table;
+}
+.bg-contato article:after {
+  clear: both;
+}
+.bg-contato article:last-child {
+  margin-right: 0%;
+}
+/*********************************
+Animação
+*********************************/
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.animated-2 {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.swing {
+  transform-origin: top center;
+  animation-name: swing;
+}
+.swing-2 {
+  transform-origin: top right;
+  animation-name: swing;
+}
+@-moz-keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

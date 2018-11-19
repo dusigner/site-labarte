@@ -1,0 +1,15 @@
+{
+  "name": "labart",
+  "version": "1.0.0",
+  "description": "Estudio Labart",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "dusigner"
+  },
+  "author": "Eduardo Soares",
+  "license": "ISC"
+}
